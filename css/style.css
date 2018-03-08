@@ -1,0 +1,23 @@
+/*--Bootstrap Changes---*/
+
+.container-fluid{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+/*--End of bootstrap Changes--*/
+
+
+/* --Home Section--*/
+    .home-section{
+        background: #7DC2AD;
+        min-height: 700px;
+        
+    }
+/*--End of Home Section--*/
+
+/* --Category Section--*/
+
+.category-section{
+    background: #e27d60;
+}
+/*-- End of category Section--*/

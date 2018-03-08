@@ -1,0 +1,22 @@
+<div class="container-fluid category-section">
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-lg-8">
+                <input type="text" ng-model="category.addName" class="form-control">
+            </div>
+            <div class="col-lg-4">
+                <button  ng-click="category.Add()" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col">
+                <ol class="text-white">
+                    <li ng-repeat="cat in category.productsList" class="pr-2 pt-2" ng-class="{'bg-success':cat.status}" ng-click="cat.status =! cat.status">{{cat.name}} 
+                        <button ng-click="category.check($index)"  class="btn btn-warning">Status</button>
+                        <button ng-click="category.remove($index)" class="btn btn-danger">Remove</button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container-fluid home-section">
+    <div class="container ">
+        <div class="row p-2">
+            <div class=" col-sm-6 col-lg-8  ">
+                <input type="text" placeholder="Add category" ng-model="home.category" class="form-control">
+            </div>
+            <div class="col-sm-6 col-lg-4 ">
+                <button ng-click="home.add()" class="btn btn-danger">Add</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col card bg-info">
+                <ol class="card-body text-white">
+                    <li ng-repeat=" x in home.list"><a href="#!/category/{{x.name}}" class="text-white">{{x.name}}</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
